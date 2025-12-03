@@ -19,16 +19,33 @@ Generate secure passwords quickly from your terminal—no extra dependencies req
 git clone git@github.com:d65d0econf/python_pass.git
 cd python_pass
 ```
-## Optional Instructions for linux/windows
-make it executable and run in PATH to use anywhere 
+## Optional Instructions for linux/macOS
+
+create new dir if needed to place scripts
+```bash
+mkdir -p ~/scripts
+```
+place in PATH
+```bash
+echo 'export PATH="$HOME/scripts:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+make it executable 
 ``` bash
 chmod +x passgen.py
+mv passgen.py ~/scripts/
 ```
-for windows, add ```passgen.py``` to 
+
+## Optional Instructions for Windows 10/11
+ place 'passgen.py' in a folder 
+ 
 C:\Users\YourName\Scripts\
     - Add that folder to your **USER PATH**:
+    
         Open **Environment Variables** → Edit **Path** → Add your folder.
+        
     - (Optional) Add `.PY` to `PATHEXT` so you can run it without `.py`.
+    
     - test in PowerShell
 
 ```powershell 
