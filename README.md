@@ -14,11 +14,18 @@ Generate secure passwords quickly from your terminal—no extra dependencies req
 
 ## Installation 🛠️
 
-1. Clone the repository:
+Clone the repository:
 ```bash
 git clone git@github.com:d65d0econf/python_pass.git
 cd python_pass
+python3 passgen.py
 ```
+note, default is 12 length, uppercase and special characters
+
+unless flags are used
+
+use -h for more info
+
 ## Optional Instructions for linux/macOS
 
 create new dir if needed to place scripts
@@ -39,15 +46,18 @@ mv passgen.py ~/scripts/
 ## Optional Instructions for Windows 10/11
  place 'passgen.py' in a folder 
  
+```bash
 C:\Users\YourName\Scripts\
-    - Add that folder to your **USER PATH**:
-    
-        Open **Environment Variables** → Edit **Path** → Add your folder.
-        
-    - (Optional) Add `.PY` to `PATHEXT` so you can run it without `.py`.
-    
-    - test in PowerShell
+```
 
-```powershell 
+Add that folder to your **USER PATH**:
+    
+Open **Environment Variables** → Edit **Path** → Add your folder.
+        
+(Optional) Add .PY to PATHEXT so you can run it without .py.
+    
+test in PowerShell
+
+```bash
 passgen.py -l 16 # or just `passgen -l 16` if PATHEXT includes .PY
 ```
