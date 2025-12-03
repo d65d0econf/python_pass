@@ -3,6 +3,9 @@
 A lightweight Python password generator with customizable options.  
 Generate secure passwords quickly from your terminal—no extra dependencies required beyond Python 3.
 
+## Screenshot 
+
+![Passgen Screenshot](media/passgenconsole.png)
 
 ## Features ✨
 
